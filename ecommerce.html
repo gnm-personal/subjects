@@ -1,9 +1,31 @@
 <html>
    <head>
       <title>E-Commerce</title>
+      <link rel="stylesheet" href="css/style.css">
+      <script>
+        const firstH = document.getElementById("firsth");
+        const secondH = document.getElementById("secondh");
+      
+        const firstUnit = document.getElementById("firstUnit");
+        const secondUnit = document.getElementById("secondUnit");
+      
+        function toggle(unitToShow) {
+          // sab hide kar do pehle
+          [firstUnit, secondUnit].forEach(unit => {
+            if (unit !== unitToShow) unit.style.display = "none";
+          });
+      
+          // ab jis par click hua hai use toggle karo
+          unitToShow.style.display =
+            unitToShow.style.display === "block" ? "none" : "block";
+        }
+      
+        firstH.addEventListener("click", () => toggle(firstUnit));
+        secondH.addEventListener("click", () => toggle(secondUnit));
+      </script>
    </head>
    <body>
-      <h1 id="firstH">UNIT - I</h1>
+      <h1 id="firsth">UNIT - I</h1>
       <div id="firstUnit">
          <h2>1. Business Environment – Meaning & Definition</h2>
          <p>

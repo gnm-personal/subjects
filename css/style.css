@@ -10,6 +10,9 @@ body {
 
 .unittitle {
 	width: 40%;
+	text-align: center;
+	font-size: 3em;
+	border: 3px solid #000000;
 }
 
 h1 {
@@ -17,7 +20,6 @@ h1 {
 	text-align: center;
 	font-size: 3em;
 	border: 3px solid #000000;
-	border-radius: 10px;
 }
 
 #firsth {

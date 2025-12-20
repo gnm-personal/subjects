@@ -6,29 +6,40 @@
          document.addEventListener("DOMContentLoaded", function () {
             const firstH = document.getElementById("firsth");
             const secondH = document.getElementById("secondh");
+            const thirdH = document.getElementById("thirdh");
+            const fourthH = document.getElementById("fourthh");
       
             const firstUnit = document.getElementById("firstUnit");
-            // const secondUnit = document.getElementById("secondUnit");
+            const secondUnit = document.getElementById("secondUnit");
+            const thirdUnit = document.getElementById("thirdUnit");
+            const fourthUnit = document.getElementById("fourthUnit");
       
             function toggle(unitToShow) {
               // Hide all other units
-              // [firstUnit, secondUnit].forEach(unit => {
-              [firstUnit].forEach(unit => {
+              [firstUnit, secondUnit, thirdUnit, fourthUnit].forEach(unit => {
                 if (unit !== unitToShow) unit.style.display = "none";
               });
       
               // Toggle the clicked one
-              unitToShow.style.display =
-                unitToShow.style.display === "block" ? "none" : "block";
+              unitToShow.style.display = unitToShow.style.display === "block" ? "none" : "block";
             }
       
             firstH.addEventListener("click", () => toggle(firstUnit));
-            // secondH.addEventListener("click", () => toggle(secondUnit));
+            secondH.addEventListener("click", () => toggle(secondUnit));
+            thirdH.addEventListener("click", () => toggle(thirdUnit));
+            fourthH.addEventListener("click", () => toggle(fourthUnit));
          });
       </script>
    </head>
    <body>
-      <h1 id="firsth">UNIT - I</h1>
+      <div class="units">
+         <div class="unittitle">UNIT: </div>
+         <h1 id="firsth">I</h1>
+         <h1 id="secondh">II</h1>
+         <h1 id="thirdh">III</h1>
+         <h1 id="fourthh">IV</h1>
+      </div>
+      
       <div id="firstUnit">
          <h2>1. Business Environment – Meaning & Definition</h2>
          <p>
@@ -2522,5 +2533,9 @@
             </li>
          </ol>
       </div>
+
+      <div id="secondUnit">Second Unit Work is in Progress</div>
+      <div id="thirdUnit">Third Unit Work is in Progress</div>
+      <div id="fourthUnit">Fourth Unit Work is in Progress</div>
    </body>
 </html>

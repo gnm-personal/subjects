@@ -3,16 +3,37 @@ body {
 	text-align: justify;
 }
 
-h1 {
+.units {
+	display: flex;
 	width: 100%;
+}
+
+.unittitle {
+	width: 40%;
+}
+
+h1 {
+	width: 15%;
 	text-align: center;
-	font-size: 5em;
+	font-size: 3em;
 	border: 3px solid #000000;
 	border-radius: 10px;
 }
 
-#firstH {
+#firsth {
 	background: yellow;
+}
+
+#secondh {
+	background: lightgreen;
+}
+
+#thirdh {
+	background: lightblue;
+}
+
+#fourthh {
+	background: lightpink;
 }
 
 h2 {

@@ -8,11 +8,12 @@
             const secondH = document.getElementById("secondh");
       
             const firstUnit = document.getElementById("firstUnit");
-            const secondUnit = document.getElementById("secondUnit");
+            // const secondUnit = document.getElementById("secondUnit");
       
             function toggle(unitToShow) {
               // Hide all other units
-              [firstUnit, secondUnit].forEach(unit => {
+              // [firstUnit, secondUnit].forEach(unit => {
+              [firstUnit].forEach(unit => {
                 if (unit !== unitToShow) unit.style.display = "none";
               });
       
@@ -22,7 +23,7 @@
             }
       
             firstH.addEventListener("click", () => toggle(firstUnit));
-            secondH.addEventListener("click", () => toggle(secondUnit));
+            // secondH.addEventListener("click", () => toggle(secondUnit));
          });
       </script>
    </head>

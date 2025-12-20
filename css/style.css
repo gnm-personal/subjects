@@ -18,3 +18,7 @@ h1 {
 h2 {
 	text-decoration: underline;
 }
+
+#firstUnit, #secondUnit {
+	display: none;
+}

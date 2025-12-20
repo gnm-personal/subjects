@@ -42,6 +42,6 @@ h2 {
 	text-decoration: underline;
 }
 
-#firstUnit, #secondUnit {
+#firstUnit, #secondUnit, #thirdUnit, #fourthUnit {
 	display: none;
 }

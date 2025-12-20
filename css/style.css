@@ -13,6 +13,7 @@ h1 {
 	text-align: center;
 	font-size: 3em;
 	border: 3px solid #000000;
+	cursor: pointer;
 }
 
 .unittitle {
@@ -24,24 +25,28 @@ h1 {
 
 #firsth {
 	background: yellow;
+	cursor: pointer;
 }
 
 #secondh {
-	background: lightgreen;
+	background: aquamarine;
+	cursor: pointer;
 }
 
 #thirdh {
 	background: lightblue;
+	cursor: pointer;
 }
 
 #fourthh {
 	background: lightpink;
+	cursor: pointer;
 }
 
 h2 {
 	text-decoration: underline;
 }
 
-#firstUnit, #secondUnit, #thirdUnit, #fourthUnit {
+#secondUnit, #thirdUnit, #fourthUnit {
 	display: none;
 }

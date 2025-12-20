@@ -3,32 +3,56 @@
       <title>E-Commerce</title>
       <link rel="stylesheet" href="css/style.css">
       <script>
-         document.addEventListener("DOMContentLoaded", function () {
-            const firstH = document.getElementById("firsth");
-            const secondH = document.getElementById("secondh");
-            const thirdH = document.getElementById("thirdh");
-            const fourthH = document.getElementById("fourthh");
+        document.addEventListener("DOMContentLoaded", function () {
+            const headings = [
+              document.getElementById("firsth"),
+              document.getElementById("secondh"),
+              document.getElementById("thirdh"),
+              document.getElementById("fourthh"),
+            ];
+            const units = [
+              document.getElementById("firstUnit"),
+              document.getElementById("secondUnit"),
+              document.getElementById("thirdUnit"),
+              document.getElementById("fourthUnit"),
+            ];
       
-            const firstUnit = document.getElementById("firstUnit");
-            const secondUnit = document.getElementById("secondUnit");
-            const thirdUnit = document.getElementById("thirdUnit");
-            const fourthUnit = document.getElementById("fourthUnit");
+            // Original background map (to restore later)
+            const originalColors = {
+              firsth: "yellow",
+              secondh: "aquamarine",
+              thirdh: "lightblue",
+              fourthh: "lightpink"
+            };
       
-            function toggle(unitToShow) {
+            function toggle(unitToShow, headingClicked) {
+      
               // Hide all other units
-              [firstUnit, secondUnit, thirdUnit, fourthUnit].forEach(unit => {
-                if (unit !== unitToShow) unit.style.display = "none";
+              units.forEach((u) => {
+                if (u !== unitToShow) u.style.display = "none";
               });
       
-              // Toggle the clicked one
-              unitToShow.style.display = unitToShow.style.display === "block" ? "none" : "block";
+              // Reset all headings to original color
+              headings.forEach((h) => {
+                h.style.background = originalColors[h.id];
+              });
+      
+              // Toggle clicked unit
+              if (unitToShow.style.display === "block") {
+                unitToShow.style.display = "none";
+                headingClicked.style.background = originalColors[headingClicked.id];
+              } else {
+                unitToShow.style.display = "block";
+                headingClicked.style.background = "green";
+              }
             }
       
-            firstH.addEventListener("click", () => toggle(firstUnit));
-            secondH.addEventListener("click", () => toggle(secondUnit));
-            thirdH.addEventListener("click", () => toggle(thirdUnit));
-            fourthH.addEventListener("click", () => toggle(fourthUnit));
-         });
+            // Event listeners
+            headings[0].addEventListener("click", () => toggle(units[0], headings[0]));
+            headings[1].addEventListener("click", () => toggle(units[1], headings[1]));
+            headings[2].addEventListener("click", () => toggle(units[2], headings[2]));
+            headings[3].addEventListener("click", () => toggle(units[3], headings[3]));
+          });
       </script>
    </head>
    <body>

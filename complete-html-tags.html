@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Complete HTML Tags – Description, Syntax & Live Examples</title>
+<meta name="description" content="All important HTML tags with description, syntax, live examples and example code">
+<meta name="author" content="HTML Documentation">
+
+<link rel="icon" href="#">
+
+<style>
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background:#f7f7f7;
+  padding:20px;
+  line-height:1.6;
+}
+.tag-box{
+  background:#ffffff;
+  border:1px solid #ccc;
+  border-radius:6px;
+  padding:16px;
+  margin-bottom:30px;
+}
+h1{color:#2c3e50;}
+h2{color:#34495e;margin-top:0;}
+h3{color:#555;margin-bottom:4px;}
+pre{
+  background:#f0f0f0;
+  padding:10px;
+  overflow:auto;
+}
+.output{
+  border:1px dashed #999;
+  padding:10px;
+  background:#fafafa;
+  margin-top:6px;
+}
+</style>
+
+<script>
+function addNumbers(){
+  document.getElementById("out").value =
+  Number(a.value) + Number(b.value);
+}
+</script>
+</head>
+<body>
+
+<h1>HTML Tags – Description, Syntax & Live Examples</h1>
+
+<!-- TEMPLATE:
+1. Tag Name
+2. Description
+3. Syntax
+4. Live Example
+5. Example Code
+-->
+
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;!DOCTYPE&gt;</p>
+<h3>2. Description of the tag</h3><p>Defines the document type and HTML version.</p>
+<h3>3. Syntax</h3><pre>&lt;!DOCTYPE html&gt;</pre>
+<h3>4. Live Example</h3><div class="output">This document uses HTML5 doctype.</div>
+<h3>5. Example Code</h3><pre>&lt;!DOCTYPE html&gt;</pre>
+</div>
+
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;html&gt;</p>
+<h3>2. Description of the tag</h3><p>Root element of an HTML document.</p>
+<h3>3. Syntax</h3><pre>&lt;html&gt;...&lt;/html&gt;</pre>
+<h3>4. Live Example</h3><div class="output">Entire page is wrapped in &lt;html&gt;.</div>
+<h3>5. Example Code</h3><pre>&lt;html&gt;Content&lt;/html&gt;</pre>
+</div>
+
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;head&gt;</p>
+<h3>2. Description of the tag</h3><p>Contains metadata, links, title, styles and scripts.</p>
+<h3>3. Syntax</h3><pre>&lt;head&gt;...&lt;/head&gt;</pre>
+<h3>4. Live Example</h3><div class="output">Title and CSS are loaded from head.</div>
+<h3>5. Example Code</h3><pre>&lt;head&gt;&lt;title&gt;My Page&lt;/title&gt;&lt;/head&gt;</pre>
+</div>
+
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;title&gt;</p>
+<h3>2. Description of the tag</h3><p>Sets the title of the web page shown in browser tab.</p>
+<h3>3. Syntax</h3><pre>&lt;title&gt;Page Title&lt;/title&gt;</pre>
+<h3>4. Live Example</h3><div class="output">Check the browser tab.</div>
+<h3>5. Example Code</h3><pre>&lt;title&gt;HTML Tags&lt;/title&gt;</pre>
+</div>
+
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;meta&gt;</p>
+<h3>2. Description of the tag</h3><p>Provides metadata such as description, keywords and author.</p>
+<h3>3. Syntax</h3><pre>&lt;meta charset="UTF-8"&gt;</pre>
+<h3>4. Live Example</h3><div class="output">UTF-8 encoding is applied.</div>
+<h3>5. Example Code</h3><pre>&lt;meta name="description" content="HTML tutorial"&gt;</pre>
+</div>
+
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;link&gt;</p>
+<h3>2. Description of the tag</h3><p>Links external resources like CSS files.</p>
+<h3>3. Syntax</h3><pre>&lt;link rel="stylesheet" href="style.css"&gt;</pre>
+<h3>4. Live Example</h3><div class="output">External CSS can be linked using &lt;link&gt;.</div>
+<h3>5. Example Code</h3><pre>&lt;link rel="stylesheet" href="style.css"&gt;</pre>
+</div>
+
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;style&gt;</p>
+<h3>2. Description of the tag</h3><p>Defines internal CSS styles.</p>
+<h3>3. Syntax</h3><pre>&lt;style&gt;p{color:blue;}&lt;/style&gt;</pre>
+<h3>4. Live Example</h3><div class="output"><span style="color:blue">Styled text</span></div>
+<h3>5. Example Code</h3><pre>&lt;style&gt;body{background:#eee;}&lt;/style&gt;</pre>
+</div>
+
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;script&gt;</p>
+<h3>2. Description of the tag</h3><p>Defines JavaScript or links external JS files.</p>
+<h3>3. Syntax</h3><pre>&lt;script&gt;alert('Hi');&lt;/script&gt;</pre>
+<h3>4. Live Example</h3><div class="output">JavaScript is enabled on this page.</div>
+<h3>5. Example Code</h3><pre>&lt;script src="app.js"&gt;&lt;/script&gt;</pre>
+</div>
+
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;body&gt;</p>
+<h3>2. Description of the tag</h3><p>Contains all visible content of the webpage.</p>
+<h3>3. Syntax</h3><pre>&lt;body&gt;Content&lt;/body&gt;</pre>
+<h3>4. Live Example</h3><div class="output">You are reading body content.</div>
+<h3>5. Example Code</h3><pre>&lt;body&gt;Hello World&lt;/body&gt;</pre>
+</div>
+
+<!-- Headings -->
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;h1&gt; to &lt;h6&gt;</p>
+<h3>2. Description of the tag</h3><p>Heading tags from largest to smallest.</p>
+<h3>3. Syntax</h3><pre>&lt;h1&gt;Heading&lt;/h1&gt;</pre>
+<h3>4. Live Example</h3><div class="output"><h1>H1</h1><h3>H3</h3></div>
+<h3>5. Example Code</h3><pre>&lt;h2&gt;Sub Heading&lt;/h2&gt;</pre>
+</div>
+
+<!-- Paragraph -->
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;p&gt;</p>
+<h3>2. Description of the tag</h3><p>Defines a paragraph of text.</p>
+<h3>3. Syntax</h3><pre>&lt;p&gt;Text&lt;/p&gt;</pre>
+<h3>4. Live Example</h3><div class="output"><p>This is a paragraph.</p></div>
+<h3>5. Example Code</h3><pre>&lt;p&gt;Hello Paragraph&lt;/p&gt;</pre>
+</div>
+
+<!-- Line break -->
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;br&gt;</p>
+<h3>2. Description of the tag</h3><p>Inserts a single line break.</p>
+<h3>3. Syntax</h3><pre>Line&lt;br&gt;Break</pre>
+<h3>4. Live Example</h3><div class="output">Line<br>Break</div>
+<h3>5. Example Code</h3><pre>Line&lt;br&gt;Break</pre>
+</div>
+
+<!-- Horizontal rule -->
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;hr&gt;</p>
+<h3>2. Description of the tag</h3><p>Creates a horizontal divider.</p>
+<h3>3. Syntax</h3><pre>&lt;hr&gt;</pre>
+<h3>4. Live Example</h3><div class="output"><hr></div>
+<h3>5. Example Code</h3><pre>&lt;hr&gt;</pre>
+</div>
+
+<!-- Link -->
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;a&gt;</p>
+<h3>2. Description of the tag</h3><p>Defines a hyperlink.</p>
+<h3>3. Syntax</h3><pre>&lt;a href="url"&gt;Link&lt;/a&gt;</pre>
+<h3>4. Live Example</h3><div class="output"><a href="https://google.com" target="_blank">Google</a></div>
+<h3>5. Example Code</h3><pre>&lt;a href="https://google.com"&gt;Google&lt;/a&gt;</pre>
+</div>
+
+<!-- Image -->
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;img&gt;</p>
+<h3>2. Description of the tag</h3><p>Displays an image.</p>
+<h3>3. Syntax</h3><pre>&lt;img src="image.jpg"&gt;</pre>
+<h3>4. Live Example</h3><div class="output"><img src="https://via.placeholder.com/120"></div>
+<h3>5. Example Code</h3><pre>&lt;img src="image.jpg"&gt;</pre>
+</div>
+
+<!-- DIV -->
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;div&gt;</p>
+<h3>2. Description of the tag</h3><p>Defines a division or section.</p>
+<h3>3. Syntax</h3><pre>&lt;div&gt;Content&lt;/div&gt;</pre>
+<h3>4. Live Example</h3><div class="output"><div style="background:#e0e0e0;padding:5px;">Div Content</div></div>
+<h3>5. Example Code</h3><pre>&lt;div&gt;Div Content&lt;/div&gt;</pre>
+</div>
+
+<!-- SPAN -->
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;span&gt;</p>
+<h3>2. Description of the tag</h3><p>Styles a part of text inline.</p>
+<h3>3. Syntax</h3><pre>&lt;span&gt;Text&lt;/span&gt;</pre>
+<h3>4. Live Example</h3><div class="output">This is <span style="color:red">red</span> text.</div>
+<h3>5. Example Code</h3><pre>&lt;span style="color:red"&gt;Red&lt;/span&gt;</pre>
+</div>
+
+<!-- Lists -->
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;ul&gt;</p>
+<h3>2. Description of the tag</h3><p>Defines an unordered list.</p>
+<h3>3. Syntax</h3><pre>&lt;ul&gt;&lt;li&gt;Item&lt;/li&gt;&lt;/ul&gt;</pre>
+<h3>4. Live Example</h3><div class="output"><ul><li>Apple</li></ul></div>
+<h3>5. Example Code</h3><pre>&lt;ul&gt;&lt;li&gt;Apple&lt;/li&gt;&lt;/ul&gt;</pre>
+</div>
+
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;ol&gt;</p>
+<h3>2. Description of the tag</h3><p>Defines an ordered list.</p>
+<h3>3. Syntax</h3><pre>&lt;ol&gt;&lt;li&gt;Item&lt;/li&gt;&lt;/ol&gt;</pre>
+<h3>4. Live Example</h3><div class="output"><ol><li>HTML</li></ol></div>
+<h3>5. Example Code</h3><pre>&lt;ol&gt;&lt;li&gt;HTML&lt;/li&gt;&lt;/ol&gt;</pre>
+</div>
+
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;li&gt;</p>
+<h3>2. Description of the tag</h3><p>Defines a list item.</p>
+<h3>3. Syntax</h3><pre>&lt;li&gt;Item&lt;/li&gt;</pre>
+<h3>4. Live Example</h3><div class="output"><ul><li>List Item</li></ul></div>
+<h3>5. Example Code</h3><pre>&lt;li&gt;List Item&lt;/li&gt;</pre>
+</div>
+
+<!-- Table -->
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;table&gt;</p>
+<h3>2. Description of the tag</h3><p>Defines a table.</p>
+<h3>3. Syntax</h3><pre>&lt;table&gt;...&lt;/table&gt;</pre>
+<h3>4. Live Example</h3><div class="output"><table border="1"><tr><td>Data</td></tr></table></div>
+<h3>5. Example Code</h3><pre>&lt;table&gt;...&lt;/table&gt;</pre>
+</div>
+
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;tr&gt;</p>
+<h3>2. Description of the tag</h3><p>Defines a table row.</p>
+<h3>3. Syntax</h3><pre>&lt;tr&gt;...&lt;/tr&gt;</pre>
+<h3>4. Live Example</h3><div class="output"><table border="1"><tr><td>Row</td></tr></table></div>
+<h3>5. Example Code</h3><pre>&lt;tr&gt;&lt;td&gt;Row&lt;/td&gt;&lt;/tr&gt;</pre>
+</div>
+
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;th&gt;</p>
+<h3>2. Description of the tag</h3><p>Defines a table header cell.</p>
+<h3>3. Syntax</h3><pre>&lt;th&gt;Header&lt;/th&gt;</pre>
+<h3>4. Live Example</h3><div class="output"><table border="1"><tr><th>Header</th></tr></table></div>
+<h3>5. Example Code</h3><pre>&lt;th&gt;Header&lt;/th&gt;</pre>
+</div>
+
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;td&gt;</p>
+<h3>2. Description of the tag</h3><p>Defines a table data cell.</p>
+<h3>3. Syntax</h3><pre>&lt;td&gt;Data&lt;/td&gt;</pre>
+<h3>4. Live Example</h3><div class="output"><table border="1"><tr><td>Data</td></tr></table></div>
+<h3>5. Example Code</h3><pre>&lt;td&gt;Data&lt;/td&gt;</pre>
+</div>
+
+<!-- Forms -->
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;form&gt;</p>
+<h3>2. Description of the tag</h3><p>Defines an input form.</p>
+<h3>3. Syntax</h3><pre>&lt;form&gt;...&lt;/form&gt;</pre>
+<h3>4. Live Example</h3><div class="output"><form><input placeholder="Name"></form></div>
+<h3>5. Example Code</h3><pre>&lt;form&gt;&lt;input&gt;&lt;/form&gt;</pre>
+</div>
+
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;input&gt;</p>
+<h3>2. Description of the tag</h3><p>Defines an input field.</p>
+<h3>3. Syntax</h3><pre>&lt;input type="text"&gt;</pre>
+<h3>4. Live Example</h3><div class="output"><input placeholder="Text"></div>
+<h3>5. Example Code</h3><pre>&lt;input type="password"&gt;</pre>
+</div>
+
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;textarea&gt;</p>
+<h3>2. Description of the tag</h3><p>Defines multiline text input.</p>
+<h3>3. Syntax</h3><pre>&lt;textarea&gt;&lt;/textarea&gt;</pre>
+<h3>4. Live Example</h3><div class="output"><textarea>Text</textarea></div>
+<h3>5. Example Code</h3><pre>&lt;textarea&gt;Message&lt;/textarea&gt;</pre>
+</div>
+
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;button&gt;</p>
+<h3>2. Description of the tag</h3><p>Creates a clickable button.</p>
+<h3>3. Syntax</h3><pre>&lt;button&gt;Click&lt;/button&gt;</pre>
+<h3>4. Live Example</h3><div class="output"><button>Click Me</button></div>
+<h3>5. Example Code</h3><pre>&lt;button&gt;Submit&lt;/button&gt;</pre>
+</div>
+
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;label&gt;</p>
+<h3>2. Description of the tag</h3><p>Defines a label for input.</p>
+<h3>3. Syntax</h3><pre>&lt;label&gt;Name&lt;/label&gt;</pre>
+<h3>4. Live Example</h3><div class="output"><label>Name:</label><input></div>
+<h3>5. Example Code</h3><pre>&lt;label for="x"&gt;X&lt;/label&gt;</pre>
+</div>
+
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;select&gt;</p>
+<h3>2. Description of the tag</h3><p>Defines a dropdown list.</p>
+<h3>3. Syntax</h3><pre>&lt;select&gt;...&lt;/select&gt;</pre>
+<h3>4. Live Example</h3><div class="output"><select><option>India</option></select></div>
+<h3>5. Example Code</h3><pre>&lt;select&gt;&lt;option&gt;A&lt;/option&gt;&lt;/select&gt;</pre>
+</div>
+
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;option&gt;</p>
+<h3>2. Description of the tag</h3><p>Defines an option in dropdown.</p>
+<h3>3. Syntax</h3><pre>&lt;option&gt;Value&lt;/option&gt;</pre>
+<h3>4. Live Example</h3><div class="output"><select><option>Option</option></select></div>
+<h3>5. Example Code</h3><pre>&lt;option&gt;Option&lt;/option&gt;</pre>
+</div>
+
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;iframe&gt;</p>
+<h3>2. Description of the tag</h3><p>Embeds another HTML page.</p>
+<h3>3. Syntax</h3><pre>&lt;iframe src="url"&gt;&lt;/iframe&gt;</pre>
+<h3>4. Live Example</h3><div class="output"><iframe src="https://example.com" width="200" height="100"></iframe></div>
+<h3>5. Example Code</h3><pre>&lt;iframe src="page.html"&gt;&lt;/iframe&gt;</pre>
+</div>
+
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;audio&gt;</p>
+<h3>2. Description of the tag</h3><p>Embeds an audio player.</p>
+<h3>3. Syntax</h3><pre>&lt;audio controls&gt;&lt;/audio&gt;</pre>
+<h3>4. Live Example</h3><div class="output"><audio controls></audio></div>
+<h3>5. Example Code</h3><pre>&lt;audio controls&gt;&lt;source src="audio.mp3"&gt;&lt;/audio&gt;</pre>
+</div>
+
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;video&gt;</p>
+<h3>2. Description of the tag</h3><p>Embeds a video player.</p>
+<h3>3. Syntax</h3><pre>&lt;video controls&gt;&lt;/video&gt;</pre>
+<h3>4. Live Example</h3><div class="output"><video controls width="200"></video></div>
+<h3>5. Example Code</h3><pre>&lt;video controls&gt;&lt;source src="video.mp4"&gt;&lt;/video&gt;</pre>
+</div>
+
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;source&gt;</p>
+<h3>2. Description of the tag</h3><p>Defines media resource for audio/video.</p>
+<h3>3. Syntax</h3><pre>&lt;source src="file.mp3"&gt;</pre>
+<h3>4. Live Example</h3><div class="output">Used inside audio/video tags.</div>
+<h3>5. Example Code</h3><pre>&lt;source src="audio.mp3"&gt;</pre>
+</div>
+
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;nav&gt;</p>
+<h3>2. Description of the tag</h3><p>Defines navigation section.</p>
+<h3>3. Syntax</h3><pre>&lt;nav&gt;Links&lt;/nav&gt;</pre>
+<h3>4. Live Example</h3><div class="output"><nav>Home | About</nav></div>
+<h3>5. Example Code</h3><pre>&lt;nav&gt;Menu&lt;/nav&gt;</pre>
+</div>
+
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;header&gt;</p>
+<h3>2. Description of the tag</h3><p>Defines header section.</p>
+<h3>3. Syntax</h3><pre>&lt;header&gt;Header&lt;/header&gt;</pre>
+<h3>4. Live Example</h3><div class="output"><header>Header Area</header></div>
+<h3>5. Example Code</h3><pre>&lt;header&gt;Site Header&lt;/header&gt;</pre>
+</div>
+
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;footer&gt;</p>
+<h3>2. Description of the tag</h3><p>Defines footer section.</p>
+<h3>3. Syntax</h3><pre>&lt;footer&gt;Footer&lt;/footer&gt;</pre>
+<h3>4. Live Example</h3><div class="output"><footer>Footer Area</footer></div>
+<h3>5. Example Code</h3><pre>&lt;footer&gt;Copyright&lt;/footer&gt;</pre>
+</div>
+
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;section&gt;</p>
+<h3>2. Description of the tag</h3><p>Defines thematic grouping of content.</p>
+<h3>3. Syntax</h3><pre>&lt;section&gt;Content&lt;/section&gt;</pre>
+<h3>4. Live Example</h3><div class="output"><section>Section Content</section></div>
+<h3>5. Example Code</h3><pre>&lt;section&gt;Text&lt;/section&gt;</pre>
+</div>
+
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;article&gt;</p>
+<h3>2. Description of the tag</h3><p>Defines independent content.</p>
+<h3>3. Syntax</h3><pre>&lt;article&gt;Article&lt;/article&gt;</pre>
+<h3>4. Live Example</h3><div class="output"><article>Article Content</article></div>
+<h3>5. Example Code</h3><pre>&lt;article&gt;Blog&lt;/article&gt;</pre>
+</div>
+
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;aside&gt;</p>
+<h3>2. Description of the tag</h3><p>Defines aside content.</p>
+<h3>3. Syntax</h3><pre>&lt;aside&gt;Aside&lt;/aside&gt;</pre>
+<h3>4. Live Example</h3><div class="output"><aside>Aside Content</aside></div>
+<h3>5. Example Code</h3><pre>&lt;aside&gt;Sidebar&lt;/aside&gt;</pre>
+</div>
+
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;main&gt;</p>
+<h3>2. Description of the tag</h3><p>Specifies main content.</p>
+<h3>3. Syntax</h3><pre>&lt;main&gt;Main&lt;/main&gt;</pre>
+<h3>4. Live Example</h3><div class="output"><main>Main Content</main></div>
+<h3>5. Example Code</h3><pre>&lt;main&gt;Content&lt;/main&gt;</pre>
+</div>
+
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;em&gt;</p>
+<h3>2. Description of the tag</h3><p>Emphasizes text.</p>
+<h3>3. Syntax</h3><pre>&lt;em&gt;Text&lt;/em&gt;</pre>
+<h3>4. Live Example</h3><div class="output"><em>Emphasized</em></div>
+<h3>5. Example Code</h3><pre>&lt;em&gt;Important&lt;/em&gt;</pre>
+</div>
+
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;strong&gt;</p>
+<h3>2. Description of the tag</h3><p>Defines important text.</p>
+<h3>3. Syntax</h3><pre>&lt;strong&gt;Text&lt;/strong&gt;</pre>
+<h3>4. Live Example</h3><div class="output"><strong>Strong</strong></div>
+<h3>5. Example Code</h3><pre>&lt;strong&gt;Important&lt;/strong&gt;</pre>
+</div>
+
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;b&gt;</p>
+<h3>2. Description of the tag</h3><p>Makes text bold.</p>
+<h3>3. Syntax</h3><pre>&lt;b&gt;Bold&lt;/b&gt;</pre>
+<h3>4. Live Example</h3><div class="output"><b>Bold</b></div>
+<h3>5. Example Code</h3><pre>&lt;b&gt;Bold&lt;/b&gt;</pre>
+</div>
+
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;i&gt;</p>
+<h3>2. Description of the tag</h3><p>Makes text italic.</p>
+<h3>3. Syntax</h3><pre>&lt;i&gt;Italic&lt;/i&gt;</pre>
+<h3>4. Live Example</h3><div class="output"><i>Italic</i></div>
+<h3>5. Example Code</h3><pre>&lt;i&gt;Italic&lt;/i&gt;</pre>
+</div>
+
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;u&gt;</p>
+<h3>2. Description of the tag</h3><p>Underlines text.</p>
+<h3>3. Syntax</h3><pre>&lt;u&gt;Underline&lt;/u&gt;</pre>
+<h3>4. Live Example</h3><div class="output"><u>Underline</u></div>
+<h3>5. Example Code</h3><pre>&lt;u&gt;Underline&lt;/u&gt;</pre>
+</div>
+
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;mark&gt;</p>
+<h3>2. Description of the tag</h3><p>Highlights text.</p>
+<h3>3. Syntax</h3><pre>&lt;mark&gt;Text&lt;/mark&gt;</pre>
+<h3>4. Live Example</h3><div class="output"><mark>Marked</mark></div>
+<h3>5. Example Code</h3><pre>&lt;mark&gt;Highlight&lt;/mark&gt;</pre>
+</div>
+
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;small&gt;</p>
+<h3>2. Description of the tag</h3><p>Defines smaller text.</p>
+<h3>3. Syntax</h3><pre>&lt;small&gt;Small&lt;/small&gt;</pre>
+<h3>4. Live Example</h3><div class="output"><small>Small</small></div>
+<h3>5. Example Code</h3><pre>&lt;small&gt;Small&lt;/small&gt;</pre>
+</div>
+
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;sub&gt;</p>
+<h3>2. Description of the tag</h3><p>Defines subscript text.</p>
+<h3>3. Syntax</h3><pre>&lt;sub&gt;2&lt;/sub&gt;</pre>
+<h3>4. Live Example</h3><div class="output">H<sub>2</sub>O</div>
+<h3>5. Example Code</h3><pre>&lt;sub&gt;2&lt;/sub&gt;</pre>
+</div>
+
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;sup&gt;</p>
+<h3>2. Description of the tag</h3><p>Defines superscript text.</p>
+<h3>3. Syntax</h3><pre>&lt;sup&gt;2&lt;/sup&gt;</pre>
+<h3>4. Live Example</h3><div class="output">X<sup>2</sup></div>
+<h3>5. Example Code</h3><pre>&lt;sup&gt;2&lt;/sup&gt;</pre>
+</div>
+
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;code&gt;</p>
+<h3>2. Description of the tag</h3><p>Displays code in monospace font.</p>
+<h3>3. Syntax</h3><pre>&lt;code&gt;code&lt;/code&gt;</pre>
+<h3>4. Live Example</h3><div class="output"><code>console.log()</code></div>
+<h3>5. Example Code</h3><pre>&lt;code&gt;alert()&lt;/code&gt;</pre>
+</div>
+
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;pre&gt;</p>
+<h3>2. Description of the tag</h3><p>Preformatted text.</p>
+<h3>3. Syntax</h3><pre>&lt;pre&gt;text&lt;/pre&gt;</pre>
+<h3>4. Live Example</h3><div class="output"><pre>Line 1
+Line 2</pre></div>
+<h3>5. Example Code</h3><pre>&lt;pre&gt;Code&lt;/pre&gt;</pre>
+</div>
+
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;blockquote&gt;</p>
+<h3>2. Description of the tag</h3><p>Defines a block quote.</p>
+<h3>3. Syntax</h3><pre>&lt;blockquote&gt;Quote&lt;/blockquote&gt;</pre>
+<h3>4. Live Example</h3><div class="output"><blockquote>Quoted text</blockquote></div>
+<h3>5. Example Code</h3><pre>&lt;blockquote&gt;Quote&lt;/blockquote&gt;</pre>
+</div>
+
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;cite&gt;</p>
+<h3>2. Description of the tag</h3><p>Defines source of quotation.</p>
+<h3>3. Syntax</h3><pre>&lt;cite&gt;Author&lt;/cite&gt;</pre>
+<h3>4. Live Example</h3><div class="output"><cite>Author Name</cite></div>
+<h3>5. Example Code</h3><pre>&lt;cite&gt;Book&lt;/cite&gt;</pre>
+</div>
+
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;q&gt;</p>
+<h3>2. Description of the tag</h3><p>Defines short inline quote.</p>
+<h3>3. Syntax</h3><pre>&lt;q&gt;Quote&lt;/q&gt;</pre>
+<h3>4. Live Example</h3><div class="output"><q>Inline quote</q></div>
+<h3>5. Example Code</h3><pre>&lt;q&gt;Quote&lt;/q&gt;</pre>
+</div>
+
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;abbr&gt;</p>
+<h3>2. Description of the tag</h3><p>Defines abbreviation.</p>
+<h3>3. Syntax</h3><pre>&lt;abbr title="Full"&gt;Short&lt;/abbr&gt;</pre>
+<h3>4. Live Example</h3><div class="output"><abbr title="HyperText Markup Language">HTML</abbr></div>
+<h3>5. Example Code</h3><pre>&lt;abbr title="HTML"&gt;HTML&lt;/abbr&gt;</pre>
+</div>
+
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;address&gt;</p>
+<h3>2. Description of the tag</h3><p>Defines contact information.</p>
+<h3>3. Syntax</h3><pre>&lt;address&gt;Info&lt;/address&gt;</pre>
+<h3>4. Live Example</h3><div class="output"><address>Delhi, India</address></div>
+<h3>5. Example Code</h3><pre>&lt;address&gt;Contact&lt;/address&gt;</pre>
+</div>
+
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;time&gt;</p>
+<h3>2. Description of the tag</h3><p>Defines date or time.</p>
+<h3>3. Syntax</h3><pre>&lt;time&gt;2025&lt;/time&gt;</pre>
+<h3>4. Live Example</h3><div class="output"><time>2025</time></div>
+<h3>5. Example Code</h3><pre>&lt;time datetime="2025-01-01"&gt;2025&lt;/time&gt;</pre>
+</div>
+
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;progress&gt;</p>
+<h3>2. Description of the tag</h3><p>Displays progress of a task.</p>
+<h3>3. Syntax</h3><pre>&lt;progress value="50" max="100"&gt;&lt;/progress&gt;</pre>
+<h3>4. Live Example</h3><div class="output"><progress value="70" max="100"></progress></div>
+<h3>5. Example Code</h3><pre>&lt;progress value="70" max="100"&gt;&lt;/progress&gt;</pre>
+</div>
+
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;meter&gt;</p>
+<h3>2. Description of the tag</h3><p>Displays scalar measurement.</p>
+<h3>3. Syntax</h3><pre>&lt;meter value="0.6"&gt;&lt;/meter&gt;</pre>
+<h3>4. Live Example</h3><div class="output"><meter value="0.6"></meter></div>
+<h3>5. Example Code</h3><pre>&lt;meter value="0.6"&gt;&lt;/meter&gt;</pre>
+</div>
+
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;canvas&gt;</p>
+<h3>2. Description of the tag</h3><p>Used for drawing graphics via JavaScript.</p>
+<h3>3. Syntax</h3><pre>&lt;canvas width="100" height="50"&gt;&lt;/canvas&gt;</pre>
+<h3>4. Live Example</h3><div class="output"><canvas width="100" height="50" style="border:1px solid"></canvas></div>
+<h3>5. Example Code</h3><pre>&lt;canvas id="c"&gt;&lt;/canvas&gt;</pre>
+</div>
+
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;svg&gt;</p>
+<h3>2. Description of the tag</h3><p>Defines vector-based graphics.</p>
+<h3>3. Syntax</h3><pre>&lt;svg&gt;...&lt;/svg&gt;</pre>
+<h3>4. Live Example</h3><div class="output"><svg width="80" height="40"><circle cx="20" cy="20" r="15" fill="red"/></svg></div>
+<h3>5. Example Code</h3><pre>&lt;svg&gt;&lt;circle .../&gt;&lt;/svg&gt;</pre>
+</div>
+
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;details&gt;</p>
+<h3>2. Description of the tag</h3><p>Defines additional details.</p>
+<h3>3. Syntax</h3><pre>&lt;details&gt;...&lt;/details&gt;</pre>
+<h3>4. Live Example</h3><div class="output"><details><summary>More</summary>Hidden text</details></div>
+<h3>5. Example Code</h3><pre>&lt;details&gt;&lt;summary&gt;Title&lt;/summary&gt;Text&lt;/details&gt;</pre>
+</div>
+
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;summary&gt;</p>
+<h3>2. Description of the tag</h3><p>Defines heading for details.</p>
+<h3>3. Syntax</h3><pre>&lt;summary&gt;Title&lt;/summary&gt;</pre>
+<h3>4. Live Example</h3><div class="output"><details><summary>Click</summary>Content</details></div>
+<h3>5. Example Code</h3><pre>&lt;summary&gt;Click&lt;/summary&gt;</pre>
+</div>
+
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;data&gt;</p>
+<h3>2. Description of the tag</h3><p>Links content with machine-readable value.</p>
+<h3>3. Syntax</h3><pre>&lt;data value="10"&gt;Ten&lt;/data&gt;</pre>
+<h3>4. Live Example</h3><div class="output"><data value="10">Ten</data></div>
+<h3>5. Example Code</h3><pre>&lt;data value="10"&gt;Ten&lt;/data&gt;</pre>
+</div>
+
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;figure&gt;</p>
+<h3>2. Description of the tag</h3><p>Encapsulates media content.</p>
+<h3>3. Syntax</h3><pre>&lt;figure&gt;...&lt;/figure&gt;</pre>
+<h3>4. Live Example</h3><div class="output"><figure><img src="https://via.placeholder.com/80"></figure></div>
+<h3>5. Example Code</h3><pre>&lt;figure&gt;&lt;img src="img.jpg"&gt;&lt;/figure&gt;</pre>
+</div>
+
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;figcaption&gt;</p>
+<h3>2. Description of the tag</h3><p>Defines caption for figure.</p>
+<h3>3. Syntax</h3><pre>&lt;figcaption&gt;Caption&lt;/figcaption&gt;</pre>
+<h3>4. Live Example</h3><div class="output"><figure><img src="https://via.placeholder.com/80"><figcaption>Caption</figcaption></figure></div>
+<h3>5. Example Code</h3><pre>&lt;figcaption&gt;Caption&lt;/figcaption&gt;</pre>
+</div>
+
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;template&gt;</p>
+<h3>2. Description of the tag</h3><p>Defines reusable HTML snippets.</p>
+<h3>3. Syntax</h3><pre>&lt;template&gt;Content&lt;/template&gt;</pre>
+<h3>4. Live Example</h3><div class="output">Template content is hidden.</div>
+<h3>5. Example Code</h3><pre>&lt;template id="t"&gt;Hello&lt;/template&gt;</pre>
+</div>
+
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;output&gt;</p>
+<h3>2. Description of the tag</h3><p>Displays result of calculation.</p>
+<h3>3. Syntax</h3><pre>&lt;output&gt;Result&lt;/output&gt;</pre>
+<h3>4. Live Example</h3><div class="output"><input id="a" type="number"> + <input id="b" type="number"> <button onclick="addNumbers()">=</button> <output id="out"></output></div>
+<h3>5. Example Code</h3><pre>&lt;output id="out"&gt;&lt;/output&gt;</pre>
+</div>
+
+<div class="tag-box">
+<h2>1. Tag Name</h2><p>&lt;noscript&gt;</p>
+<h3>2. Description of the tag</h3><p>Defines alternate content if JavaScript is disabled.</p>
+<h3>3. Syntax</h3><pre>&lt;noscript&gt;Message&lt;/noscript&gt;</pre>
+<h3>4. Live Example</h3><div class="output"><noscript>JavaScript disabled</noscript></div>
+<h3>5. Example Code</h3><pre>&lt;noscript&gt;Enable JS&lt;/noscript&gt;</pre>
+</div>
+
+</body>
+</html>
